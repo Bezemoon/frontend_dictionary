@@ -249,6 +249,7 @@ img {
 	flex-shrink: 0;
 	background-color: rgba(220, 20, 60, 1);
 	box-shadow:  0 0 10px rgba(0,0,0,0.5);
+	color: white;
 }
 
 
