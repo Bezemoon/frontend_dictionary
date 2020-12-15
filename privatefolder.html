@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dictionary</title>
+        <link rel="stylesheet" type="text/css" href="css/style3.css">
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    </head>
+    <body>
+    <div class="b-popup" id="popup1">
+        <div class="pop-up-content">
+            <div class="exit">
+                <a href="javascript:PopUpHide('#popup1')">X</a>
+            </div>
+            <h1>Регистрация</h1>
+            <input type="text" placeholder="Email" size="22"><br>
+            <input type="text" placeholder="Phone Number" size="22"><br>
+            <input type="text" placeholder="Password" size="22"><br>
+            <input type="text" placeholder="Confirm Password" size="22"><br>
+            <button class="aplybutton">Готово</button>
+
+        </div>
+    </div>
+    <div class="b-popup" id="popup2">
+        <div class="pop-up-content">
+            <div class="exit">
+                <a href="javascript:PopUpHide('#popup2')">X</a>
+            </div>
+            <h1>Войти</h1>
+            <input type="text" placeholder="Email or Phone Number" size="22"><br>
+            <input type="text" placeholder="Password" size="22"><br>
+            <button class="aplybutton">Готово</button>
+        </div>
+    </div>
+    <header class="head">
+        <div class="head__up">
+            <div class="head__logoText">
+                <h2 ><a href="">Dictionary</a></h2>
+            </div>
+            <div class="head__login">
+                <h3><a class="head__sign" href="javascript:PopUpShow('#popup2')">Войти</a></h3>
+                <h3><a class="head__sign active" href="">Выход</a></h3>
+                <h3><a class="head__sign" href="javascript:PopUpShow('#popup1')">Регистрация</a></h3>
+            </div>
+        </div>
+        <div class="wrap1">
+            <input class="inpt" type="text" size="40">
+            <button class="btn">Искать</button>
+            <div class="head__lang">
+                <h3><a href="">Русский</a></h3>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main__up">
+            <div class="avatar">
+                <img src="images/no-photo.jpg" width="200" height="200">
+            </div>
+            <div class="filed">
+                <h4>First Name:</h4>
+                <h4>Last Name:</h4>
+                <h4>Email: aybolkabiev@gmail.com</h4>
+                <h4>Phone: +8-800-555-35-35</h4>
+                <h4>Password : AzamatLox</h4>
+            </div>
+        </div>
+        <div class="main__down">
+            <h1>History</h1>
+            <ol>
+                <li>
+                    <a href="#">Apple</a>
+                </li>
+                <li>
+                    <a href="#">Juice</a>
+                </li>
+                <li>
+                    <a href="#">Seed</a>
+                </li>
+                <li>
+                    <a href="#">Cloud</a>
+                </li>
+                <li>
+                    <a href="#">Family</a>
+                </li>
+            </ol>
+        </div>
+    </div>
+    <footer class="foot">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dictionary</title>
+        <link rel="stylesheet" type="text/css" href="css/style1.css">
+        <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    </head>
+    <body>
+    <div class="b-popup" id="popup1">
+        <div class="pop-up-content">
+            <div class="exit">
+                <a href="javascript:PopUpHide('#popup1')">X</a>
+            </div>
+            <h1>Регистрация</h1>
+            <input type="text" placeholder="Фамилия" size="22"><br>
+            <input type="text" placeholder="Имя" size="22"><br>
+            <input type="text" placeholder="Email" size="22"><br>
+            <input type="text" placeholder="Phone Number" size="22"><br>
+            <input type="text" placeholder="Password" size="22"><br>
+            <input type="text" placeholder="Confirm Password" size="22"><br>
+            <button class="aplybutton">Готово</button>
+
+        </div>
+    </div>
+    <div class="b-popup" id="popup2">
+        <div class="pop-up-content">
+            <div class="exit">
+                <a href="javascript:PopUpHide('#popup2')">X</a>
+            </div>
+            <h1>Войти</h1>
+            <input type="text" placeholder="Email or Phone Number" size="22"><br>
+            <input type="text" placeholder="Password" size="22"><br>
+            <button class="aplybutton">Готово</button>
+        </div>
+    </div>
+    <header class="head">
+        <div class="head__up">
+            <div class="head__logoText">
+                <h2 ><a href="">Dictionary</a></h2>
+            </div>
+            <div class="head__login">
+                <h3><a class="head__sign" href="javascript:PopUpShow('#popup2')">Войти</a></h3>
+                <h3><a class="head__sign active" href="#">Личный Кабинет</a></h3>
+                <h3><a class="head__sign active" href="">Выход</a></h3>
+                <h3><a class="head__sign" href="javascript:PopUpShow('#popup1')">Регистрация</a></h3>
+            </div>
+        </div>
+        <div class="wrap1">
+            <input class="inpt" type="text" size="40">
+            <button class="btn">Искать</button>
+            <div class="head__lang">
+                <h3><a href="">Русский</a></h3>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main__word">
+            <h1>Apple</h1>
+            <p class="pronun">/ˈæp.əl/</p>
+            <audio controls>
+
+            </audio>
+        </div>
+        <div class="main__content">
+            <p class="meaning">
+                Is an American multinational technology company headquartered in Cupertino, California, that designs, develops and sells consumer electronics, computer software, and online services. It is considered one of the Big Five companies in the U.S. information technology industry, along with Amazon, Google, Microsoft, and Facebook.
+            </p>
+            <p class="url"> Link to wiki: <a href="https://en.wikipedia.org/wiki/Apple_Inc.">click</a></p>
+        </div>
+    </div>
+    <footer class="foot">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,<br> when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    </body>
+</html>
