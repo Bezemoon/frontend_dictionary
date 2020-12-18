@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>preview</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Paytone+One&family=Roboto&display=swap');
+		body{
+			height: 100%;
+			margin: 0;
+			background-color: rgba(220, 20, 60, 1);
+			ont-family:'Paytone One', sans-serif;
+			font-size: 64px;
+			color: white;
+		}
+		.wraper {
+			display: flex;
+			justify-content: center;
+			flex-basis: 100%;
+			align-items: center;
+		}
+
+		.wraper.isnone{
+			display: none;
+			background-color: white;
+		}
+		.wraper__1{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(-3000px, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__2{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(0, -3000px);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__3{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(-3000px, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+
+		.wraper__4{
+			margin-top: 15%;
+			margin-bottom: 14%;
+
+			transform: translate(0, -3000px);
+			transition: all 0.5s ease 0s;
+		}
+
+
+		.wraper__5{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(-3000px, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__6{
+			margin-top: 15%;
+			margin-bottom: 14%;
+
+			transform: translate(0, -3000px);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__7{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(-3000px, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__8{
+			margin-top: 15%;
+			margin-bottom: 14%;
+
+			transform: translate(0, -3000px);
+			transition: all 0.5s ease 0s;
+		}
+		.wraper__9{
+			margin-top: 15%;
+			margin-bottom: 14%;
+			transform: translate(-3000px, 0);
+			transition: all 0.5s ease 0s;
+		}
+		.wraper__10{
+			margin-top: 15%;
+			margin-bottom: 14%;
+
+			transform: translate(0, -3000px);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__1.active {
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__2.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__3.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+
+		.wraper__4.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+
+		.wraper__5.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__6.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__7.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		.wraper__8.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+		.wraper__9.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+		.wraper__10.active{
+			transform: translate(0, 0);
+			transition: all 0.5s ease 0s;
+		}
+
+		footer{
+		 text-align: center;
+		 font-size: 14px;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="wraper" id="wrap">
+		<div class="wraper__1">
+			<h1>D</h1>
+		</div>
+		<div class="wraper__2">
+			<h1>i</h1>
+		</div>
+		<div class="wraper__3">
+			<h1>c</h1>
+		</div>
+		<div class="wraper__4">
+			<h1>t</h1>
+		</div>
+		<div class="wraper__5">
+			<h1>i</h1>
+		</div>
+		<div class="wraper__6">
+			<h1>o</h1>
+		</div>
+		<div class="wraper__7">
+			<h1>n</h1>
+		</div>
+		<div class="wraper__8">
+			<h1>a</h1>
+		</div>
+		<div class="wraper__9">
+			<h1>r</h1>
+		</div>
+		<div class="wraper__10">
+			<h1>y</h1>
+		</div>
+	</div>
+	<footer>
+		<p>
+			Designed & Developed By <a href="azat.ai">AzatAI</a>
+		</p>
+	</footer>
+	<script type="text/javascript">
+		var nl = [1,2 ,3 ,4 ,5 ,6 , 7, 8, 9, 10];
+		let iterator = nl[Symbol.iterator]();
+		document.body.onclick = () => {
+			let i = iterator.next();
+			if(!i.done){
+				anim(i.value);
+			}
+
+			if (i.done){
+				document.location.href = "index.html";
+			}
+		}
+
+		function anim (value) {
+			document.querySelector(".wraper__"+value).classList.add("active");
+		}
+	</script>
+</body>
+</html>
